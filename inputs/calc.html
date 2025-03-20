@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    
+    .container{
+      height: 350px;
+      width:250px;
+      background-color: gray;
+      border-radius: 10px;
+      box-shadow: 0 0 10px gray;
+      align-content: center;
+      margin-top: 100px;
+      border:10px solid gold;
+    }
+    .container:hover{
+       background-color: yellow;
+       color:black;
+       font-size: medium;
+       border:10px solid coral;
+
+    }
+    h1{
+      text-align: center;
+      font-family: verdana;
+    }
+    h1:hover{
+       color:yellowgreen;
+    }
+    button{
+	     display:inline-block;
+		 width:50px;
+		 height:50px;
+     border-radius: 10px;
+		 line-height:0.5;
+		 border-radius:20px;
+		 background:black;
+     color:white;
+    }
+    button:hover{
+      background-color: white;
+      color:black;
+    }
+    input{
+      width:205px;
+      height:30px;
+    }
+    input:hover{
+      background-color:cadetblue;
+    }
+
+   </style>
+</head>
+<body>
+  <center>
+  <div class="container">
+  <h1>calculator</h1>
+  <input type="text" id="result"><br><br>
+  <button onclick="number(1)" value=1>1</button> 
+  <button onclick="number(2)" value=2>2</button> 
+  <button onclick="number(3)" value=3>3</button> 
+  <button onclick="clearResult()">clear</button> <br>
+  <button onclick="number(4)" value=4>4</button> 
+  <button onclick="number(5)" value=5>5</button> 
+  <button onclick="number(6)" value=6>6</button> 
+  <button onclick="operator('*')" value='*'>*</button><br> 
+  <button onclick="number(7)" value=7>7</button> 
+  <button onclick="number(8)" value=8>8</button> 
+  <button onclick="number(9)" value=9>9</button> 
+  <button onclick="operator('/')" value='/'>/</button><br>
+  <button onclick="operator('+')" value='+'>+</button>
+  <button onclick="number(0)" value=0>0</button>
+  <button onclick="operator('-')" value='-'>-</button>
+  <button onclick="calc('=')" value='='>=</button>
+</div>
+</center>
+  <script src="./calc.js"></script>
+
+
+</body>
+</html>

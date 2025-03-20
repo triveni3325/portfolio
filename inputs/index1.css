@@ -1,0 +1,114 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* First Section */
+section.container {
+  padding: 4rem 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  section.container {
+    padding: 4rem;
+  }
+  nav .container {
+    padding: 0 4rem;
+  }
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+}
+.navbar-brand:hover {
+  color: #ff5733 !important;
+  transition: 0.3s ease-in-out;
+}
+.navbar-nav .nav-link {
+  color: black;
+  font-size: 1.1rem;
+}
+.nav-link:hover {
+  color: #ff5733;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-nav .nav-item {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav .container {
+    padding: 0 1rem;
+  }
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease-in-out;
+}
+
+p {
+  transition: color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .hero img {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero img {
+    width: 70%;
+    max-width: 280px;
+  }
+
+  .projects .col-md-4,
+  .services .col-md-4 {
+    width: 100%;
+  }
+
+  .contact-form {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Cards */
+.card .btn {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card:hover .btn {
+  background-color: darkorange;
+  color: white;
+}
+
+/* Sections */
+#projects {
+  background-color: #d6e4ff;
+  padding-bottom: 20px;
+}
+
+#services {
+  background-color: #f8f9fa;
+  margin-top: 8px;
+  padding-bottom: 20px;
+}
+
+.container1 {
+  background-color: #f2f2f2;
+  margin-top: 0;
+  padding: 25px 1rem;
+}

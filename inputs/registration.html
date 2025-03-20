@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Enrollment Application</title>
+    <style>
+        body{
+            font-family: Calibri, sans-serif;
+        }
+        div{
+            background-color: gray;
+            padding: 10px;
+            width: 400px;
+            box-shadow: 0 0 10px gray;
+            border-radius: 5px;
+        }
+        input , select {
+            border:none;
+            font-size: 15px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        textarea{
+            border:none;
+            font-size: 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .button{
+            background-color: black;
+            color: lightgray;
+        }
+        div:hover{
+            background-color: burlywood;
+        }
+       
+    </style>
+</head>
+<body>
+   
+    <div>
+        <h2>Job Enrollment</h2>
+        <form>
+           <label for="username">Username</label><br>
+           <input type="text" placeholder="enter your name"><br>
+
+           <label for="password">Password</label><br>
+           <input type="password" placeholder="enter your password"><br>
+
+           <label for="email">Email</label><br>
+           <input type="email" placeholder="enter your email"><br>
+
+           <label for="bio">About Yourself</label><br>
+           <textarea name="Bio" id="bio" cols="50" rows="5" placeholder="enter your Bio"></textarea><br>
+
+           <label for="">Designation</label><br>
+           <select >
+           <option value="software engineer">software Engineer</option>
+           <option value="junior developer">Junior Developer</option>
+           <option value="Sr Developer">Sr Developer</option>
+           <option value="project manager">project manager</option>
+         </select><br>
+         <label for="DOB">DOB</label><br>
+         <input type="date"><br>
+         <label for="image">Your image</label><br>
+         <input type=" file"><br>
+         <label for="number">Mobile Number</label><br>
+         <input type="number" placeholder="enter your number"><br>
+         <label>Programming Level</label><br>
+          <input type="checkbox" value="beginner">Beginner
+          <input type="checkbox" value="advanced">Advanced
+          <input type="checkbox" value="professional">professional<br>
+          <label>Expertise in</label><br>
+          <input type="radio" value="frontend">Frontend
+          <input type="radio" value="backend">Backend
+          <input type="radio" value="database">Database
+          <input type="radio" value="sql">Sql<br>
+          <label>Website URL</label><br>
+          <input type="url" value="your Website">
+        </form><br>
+        <input class="button" type="submit" value="enroll">
+        <input class="button" type="reset">
+    </div>
+
+    
+</body>
+</html>
