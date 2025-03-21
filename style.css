@@ -20,6 +20,7 @@ body {
   /* Navbar */
   .navbar {
     background-color: #ffffff;
+    padding: 10px 15px;
   }
   .navbar-brand:hover {
     color: #ff5733 !important;
@@ -40,9 +41,16 @@ body {
   }
   
   @media screen and (max-width: 768px) {
-    nav .container {
-      padding: 0 1rem;
+    .navbar {
+      padding: 5px 10px;
     }
+    .navbar-brand{
+      font-size: 1.2rem;
+    }
+    .navbar-nav .nav-link{
+        font-size: 0.9rem;
+    }
+    
   }
   
   /* Hero Section */
@@ -57,11 +65,6 @@ body {
     max-width: 400px;
     transition: transform 0.3s ease-in-out;
   }
-  
-  p {
-    transition: color 0.3s ease-in-out;
-  }
-  
   @media screen and (max-width: 768px) {
     .hero img {
       width: 80%;
