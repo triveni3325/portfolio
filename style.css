@@ -1,9 +1,10 @@
-
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
   }
   
-  /* First Section */
+  /* starting container */
   section.container {
     padding: 4rem 2rem;
   }
@@ -22,18 +23,22 @@ body {
     background-color: #ffffff;
     padding: 10px 15px;
   }
+  
   .navbar-brand:hover {
     color: #ff5733 !important;
     transition: 0.3s ease-in-out;
   }
+  
   .navbar-nav .nav-link {
     color: black;
     font-size: 1.1rem;
   }
+  
   .nav-link:hover {
     color: #ff5733;
   }
   
+  /* Navbar Responsiveness */
   @media screen and (min-width: 1024px) {
     .navbar-nav .nav-item {
       padding: 0 1rem;
@@ -42,15 +47,14 @@ body {
   
   @media screen and (max-width: 768px) {
     .navbar {
-      padding: 10px 15px;
+      padding: 5px 10px;
     }
-    .navbar-brand{
-      font-size: 1.2rem;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .navbar {
+      padding: 3px 5px;
     }
-    .navbar-nav .nav-link{
-         padding: 8px 10px;
-    }
-    
   }
   
   /* Hero Section */
@@ -70,7 +74,12 @@ body {
     transition: color 0.3s ease-in-out;
   }
   
+  /* Hero Responsive Adjustments */
   @media screen and (max-width: 768px) {
+    .hero {
+      padding: 50px 0;
+    }
+    
     .hero img {
       width: 80%;
       max-width: 300px;
@@ -116,9 +125,16 @@ body {
     padding-bottom: 20px;
   }
   
+  /* Container responsiveness */
   .container1 {
     background-color: #f2f2f2;
     margin-top: 0;
     padding: 25px 1rem;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .container1 {
+      padding: 15px 0.5rem;
+    }
   }
   
