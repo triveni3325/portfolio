@@ -13,5 +13,5 @@ function calc() {
 }
 
 function clearResult() {
-    document.getElementById('result').value = ' ';
+    document.getElementById('result').value = '';
 }
