@@ -1,3 +1,4 @@
+
 function number(value) {
     
     document.getElementById('result').value += value;
